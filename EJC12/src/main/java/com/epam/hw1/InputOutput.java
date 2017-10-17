@@ -9,7 +9,7 @@ public class InputOutput {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input number for check: ");
-        int scan = 0;
+        int scan;
         if (scanner.hasNextInt()) {
          scan =  scanner.nextInt();
             System.out.println("It is the integer");
