@@ -7,15 +7,20 @@ package com.epam.hw2;
 public class TrafficLight {
     /**
      * Creates  method which takes
-     * @param inputTime and gives back string from chooseLight
+     *
+     * @param enterMinute and gives back string from chooseLight
      **/
-    public void chooseLight(double inputTime) {
-        if (inputTime % 10 < 3 & inputTime % 10 >= 1) {
-            System.out.println("Red Light!");
-        } else if (inputTime % 10 > 2 & inputTime % 10 < 6) {
-            System.out.println("Yellow Light!");
-        } else if (inputTime % 10 > 5 & inputTime % 10 <= 10 || inputTime % 10 == 0) {
-            System.out.println("Green Light!");
-        }
+    public static String light;
+
+
+    public String chooseLight(int enterMinute) {
+        if (enterMinute % 10 < 3 & enterMinute % 10 >= 1) {
+            return light = "Red Light!";
+        } else if (enterMinute % 10 > 2 & enterMinute % 10 < 6) {
+            return light = "Yellow Light!";
+        } else if (enterMinute % 10 > 5 & enterMinute % 10 <= 10 || enterMinute % 10 == 0) {
+            return light = "Green Light!";
+        } else
+            return light = "Negative number!";
     }
 }
