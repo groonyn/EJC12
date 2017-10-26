@@ -12,8 +12,7 @@ public class TrafficLight {
      **/
     public static String light;
 
-
-    public String chooseLight(int enterMinute) {
+    public static String chooseLight(int enterMinute) {
         if (enterMinute % 10 < 3 & enterMinute % 10 >= 1) {
             return light = "Red Light!";
         } else if (enterMinute % 10 > 2 & enterMinute % 10 < 6) {

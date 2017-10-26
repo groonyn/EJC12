@@ -13,11 +13,10 @@ public class Main {
     try {
         enterMinute = Integer.parseInt(enteredMinute);
     } catch (IllegalArgumentException enterMinute) {
-        System.out.println("You entered not integer number ");
+        throw new IllegalArgumentException("You entered not integer number ");
     }
-        TrafficLight trafficLight = new TrafficLight();
-        trafficLight.chooseLight(enterMinute);
-        System.out.println(TrafficLight.light);
+        System.out.println(TrafficLight.chooseLight(enterMinute));
+
         }
     }
 
