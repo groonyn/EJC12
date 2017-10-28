@@ -9,6 +9,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
     System.out.println("Enter minute: ");
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    // все классы и методы , что ниже в мэйн методе и классе не должны быть, трай и кэтч , все это должнобыт ьв
+        // отдельных классах, доделат ьэто задание , переделать мейн - вывест ивсе в другие классы, а также тесты..
+        // тесты написать через ассерт иккуалз
     String enteredMinute = reader.readLine();
     try {
         enterMinute = Integer.parseInt(enteredMinute);

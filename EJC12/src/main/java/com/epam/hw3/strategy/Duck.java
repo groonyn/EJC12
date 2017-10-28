@@ -1,4 +1,4 @@
-package com.epam.hw3_strategy;
+package com.epam.hw3.strategy;
 
 public abstract class Duck {
     QuackAbility quackAbility;
