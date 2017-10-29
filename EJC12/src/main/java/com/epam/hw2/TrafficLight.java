@@ -26,7 +26,7 @@ public class TrafficLight {
 
     public static String chooseLight(String inputMinute) throws IOException {
         int minuteNumber = enteringMinute(inputMinute);
-        String lightColour = new String();
+        String lightColour;
         if (minuteNumber % 10 < 3 & minuteNumber % 10 >= 1) {
             lightColour = "Red Light!";
         } else if (minuteNumber % 10 > 2 & minuteNumber % 10 < 6) {
