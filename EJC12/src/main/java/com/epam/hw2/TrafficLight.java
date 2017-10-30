@@ -1,7 +1,5 @@
 package com.epam.hw2;
 
-import java.io.IOException;
-
 /**
  * Class TrafficLight taking numbers as input thru system input and giving Strings thru system output.
  *
@@ -15,7 +13,7 @@ public class TrafficLight {
         } catch (NumberFormatException e) {
             System.err.println("Number is negative or not Integer");
         }
-        throw new NullPointerException("Not a positive integer number");
+        throw new NullPointerException("Not a positive integer number.");
     }
 
     /**
@@ -23,15 +21,14 @@ public class TrafficLight {
      *
      * @param inputMinute and gives back string from chooseLight
      **/
-
-    public static String chooseLight(String inputMinute) throws IOException {
+    public static String chooseLight(String inputMinute) {
         int minuteNumber = enteringMinute(inputMinute);
         String lightColour;
-        if (minuteNumber % 10 < 3 & minuteNumber % 10 >= 1) {
+        if (minuteNumber % 10 < 3 & minuteNumber % 10 >= 1 & minuteNumber > 0) {
             lightColour = "Red Light!";
-        } else if (minuteNumber % 10 > 2 & minuteNumber % 10 < 6) {
+        } else if (minuteNumber % 10 > 2 & minuteNumber % 10 < 6 & minuteNumber > 0) {
             lightColour = "Yellow Light!";
-        } else if (minuteNumber % 10 > 5 & minuteNumber % 10 <= 10 || minuteNumber % 10 == 0) {
+        } else if (minuteNumber % 10 > 5 & minuteNumber % 10 <= 10 || minuteNumber % 10 == 0 & minuteNumber > 0) {
             lightColour = "Green Light!";
         } else {
             throw new NullPointerException("Not a positive integer number");
