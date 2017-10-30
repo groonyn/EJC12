@@ -1,4 +1,4 @@
-package com.epam.hw3_strategy;
+package com.epam.hw3strategy.interfaces;
 
 public interface FlyAbility {
     void fly();

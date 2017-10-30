@@ -1,4 +1,6 @@
-package com.epam.hw3_strategy;
+package com.epam.hw3strategy.interfaces.impl;
+
+import com.epam.hw3strategy.interfaces.QuackAbility;
 
 public class NoQuack implements QuackAbility {
     @Override

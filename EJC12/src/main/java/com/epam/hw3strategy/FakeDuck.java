@@ -1,4 +1,7 @@
-package com.epam.hw3_strategy;
+package com.epam.hw3strategy;
+
+import com.epam.hw3strategy.interfaces.impl.NoFly;
+import com.epam.hw3strategy.interfaces.impl.NoQuack;
 
 public class FakeDuck extends Duck {
     public FakeDuck() {
