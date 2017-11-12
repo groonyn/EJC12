@@ -2,26 +2,23 @@ package com.epam.hw4;
 
 public class Horse {
 
-    private String horseName;
+    private String name;
     private int speed;
 
-    Horse (String horseName, int speed){
-        this.horseName = horseName;
+    Horse(String name, int speed) {
+        this.name = name;
         this.speed = speed;
     }
-    public String getHorseName() {
-        return horseName;
-    }
 
-    public void setHorseName(String horseName) {
-        this.horseName = horseName;
+    public String getName() {
+        return this.name;
     }
 
     public int getSpeed() {
-        return speed;
+        return this.speed;
     }
 
-    public void setSpeed(int speed) {
+    void setSpeed(int speed) {
         this.speed = speed;
     }
 }

@@ -1,27 +1,32 @@
 package com.epam.hw4;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.List;
-
 public class Hippodrome {
-    public Hippodrome(){
-        Horse whiteHorse = new Horse("White Horse", 5);
+
+    private Race race;
+
+    public Hippodrome() {
+        Horse redHorse = new Horse("Red Horse", 5);
         Horse blackHorse = new Horse("Black Horse", 10);
-        Horse brownHorse = new Horse("Brown Horse", 20);
-        Horse grayHorse = new Horse("Gray Horse", 1);
-        List<Horse> horseList= new ArrayList<>();
-        horseList.add(whiteHorse);
-        horseList.add(blackHorse);
-        horseList.add(brownHorse);
-        horseList.add(grayHorse);
+        Horse whiteHorse = new Horse("White Horse", 20);
+        Horse brownHorse = new Horse("Brown Horse", 1);
+        List<Horse> horses = new ArrayList<>();
+        horses.add(redHorse);
+        horses.add(blackHorse);
+        horses.add(whiteHorse);
+        horses.add(brownHorse);
+
+        race = new Race(horses);
     }
 
+    public void runRace(Map<String, String> bet) {
+        race.makeBet(bet);
+        race.run();
+    }
+
+    public Horse getWinner() {
+        return race.getWinner();
+    }
 }
-// можно создать гонку, игрока, расстояние гонки
-/*
-
-
-
-
-
- */

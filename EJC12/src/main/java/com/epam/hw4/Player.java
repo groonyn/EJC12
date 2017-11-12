@@ -1,30 +1,23 @@
 package com.epam.hw4;
-
 public class Player {
-    private String playerName;
-    private int money = 10000;
 
-    public String getPlayerName() {
-        return playerName;
+    private String name;
+    private int balance;
+
+    public Player(String name, int balance) {
+        this.name = name;
+        this.balance = balance;
     }
 
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
+    public void increaseBalance(int count) {
+        this.balance = balance + count;
     }
 
-    public int getMoney() {
-        return money;
+    public void decreaseBalance(int count) {
+        this.balance = balance - count;
     }
 
-    public void setMoney(int money) {
-        this.money = money;
-    }
-
-    public void increaseMoney(int bet) {
-        this.money = money + bet;
-    }
-
-    public void decreaseMoney(int bet) {
-        this.money = money - bet;
+    public int getBalance(){
+        return this.balance;
     }
 }
