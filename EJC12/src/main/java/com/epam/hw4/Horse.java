@@ -1,5 +1,4 @@
 package com.epam.hw4;
-
 public class Horse {
 
     private String name;

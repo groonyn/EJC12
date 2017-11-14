@@ -1,5 +1,4 @@
 package com.epam.hw4;
-
 import java.util.*;
 
 public class Race {
@@ -8,7 +7,7 @@ public class Race {
     private static List<Horse> horses;
     private Horse winner;
 
-    private Map<String, String> bet;
+    private Map bet;
 
     Race(List<Horse> horses) {
         Race.horses = horses;

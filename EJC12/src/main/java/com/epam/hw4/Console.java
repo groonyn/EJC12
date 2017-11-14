@@ -22,7 +22,8 @@ public class Console {
 
     public static void read() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        usage();
+        System.out.println(USAGE);
+        System.out.println(OPTIONS);
         while (true) {
             String s = null;
             try {
@@ -48,18 +49,12 @@ public class Console {
                 }
             }
             if (s.equals("help")) {
-                usage();
             }
             if (s.equals("quit")) {
                 System.out.println("Exit...");
                 System.exit(0);
             }
         }
-    }
-
-    private static void usage() {
-        System.out.println(USAGE);
-        System.out.println(OPTIONS);
     }
 
     public static Map<String, String> getBet() {
