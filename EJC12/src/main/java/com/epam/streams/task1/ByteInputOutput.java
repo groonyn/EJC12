@@ -20,7 +20,8 @@ public class ByteInputOutput {
     private void readWrite() {
         int savedByte;
         try {
-            fis = new FileInputStream("C:\\Users\\nicol\\IdeaProjects\\EJC12\\EJC12\\EJC12\\src\\main\\java\\com\\epam\\streams\\task1\\OldFile.txt");
+            fis = new FileInputStream("C:\\Users\\n" +
+                    "icol\\IdeaProjects\\EJC12\\EJC12\\EJC12\\src\\main\\java\\com\\epam\\streams\\task1\\OldFile.txt");
             while ((savedByte = fis.read()) != -1) {
                 sb.append((char) savedByte);
             }
@@ -33,7 +34,8 @@ public class ByteInputOutput {
             }
             sb2.append("Quantity of key words: ").append(counter);
             String s2 = new String(sb2);
-            fos = new FileOutputStream("C:\\Users\\nicol\\IdeaProjects\\EJC12\\EJC12\\EJC12\\src\\main\\java\\com\\epam\\streams\\task1\\NewFile.txt");
+            fos = new FileOutputStream("C:\\Users\\n" +
+                    "icol\\IdeaProjects\\EJC12\\EJC12\\EJC12\\src\\main\\java\\com\\epam\\streams\\task1\\NewFile.txt");
             byte[] outBytes = s2.getBytes();
             fos.write(outBytes);
 
