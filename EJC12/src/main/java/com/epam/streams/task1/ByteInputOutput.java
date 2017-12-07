@@ -1,4 +1,4 @@
-package main.java.com.epam.streams;
+package main.java.com.epam.streams.task1;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -20,7 +20,7 @@ public class ByteInputOutput {
     private void readWrite() {
         int savedByte;
         try {
-            fis = new FileInputStream("C:\\Users\\nicol\\IdeaProjects\\EJC12\\Tasks\\src\\main\\java\\streams\\OldFile.txt");
+            fis = new FileInputStream("C:\\Users\\nicol\\IdeaProjects\\EJC12\\EJC12\\EJC12\\src\\main\\java\\com\\epam\\streams\\task1\\OldFile.txt");
             while ((savedByte = fis.read()) != -1) {
                 sb.append((char) savedByte);
             }
@@ -33,7 +33,7 @@ public class ByteInputOutput {
             }
             sb2.append("Quantity of key words: ").append(counter);
             String s2 = new String(sb2);
-            fos = new FileOutputStream("C:\\Users\\nicol\\IdeaProjects\\EJC12\\Tasks\\src\\main\\java\\streams\\NewFile.txt");
+            fos = new FileOutputStream("C:\\Users\\nicol\\IdeaProjects\\EJC12\\EJC12\\EJC12\\src\\main\\java\\com\\epam\\streams\\task1\\NewFile.txt");
             byte[] outBytes = s2.getBytes();
             fos.write(outBytes);
 
