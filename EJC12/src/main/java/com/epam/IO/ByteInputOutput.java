@@ -25,7 +25,6 @@ public class ByteInputOutput {
                 sb.append((char) savedByte);
             }
             String s = new String(sb);
-            System.out.println(s);
             for (String keyWord : keyWords) {
                 if (s.contains(keyWord)) {
                     counter++;
@@ -34,7 +33,6 @@ public class ByteInputOutput {
             }
             sb2.append("Quantity of key words: ").append(counter);
             String s2 = new String(sb2);
-            System.out.println(s2);
             fos = new FileOutputStream("C:\\Users\\nicol\\IdeaProjects\\EJC12\\Tasks\\src\\main\\java\\IO\\NewFile.txt");
             byte[] outBytes = s2.getBytes();
             fos.write(outBytes);
