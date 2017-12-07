@@ -1,0 +1,10 @@
+private
+public
+class
+new
+return
+import
+package
+this
+void
+Quantity of key words: 9
