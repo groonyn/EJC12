@@ -1,9 +1,10 @@
 package main.java.com.epam.IO;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class ByteIO {
+public class ByteInputOutput {
     private static int counter;
     private StringBuilder sb = new StringBuilder();
     private StringBuilder sb2 = new StringBuilder();
@@ -55,7 +56,7 @@ public class ByteIO {
     }
 
     public static void main(String[] args) {
-        ByteIO byteIo = new ByteIO();
+        ByteInputOutput byteIo = new ByteInputOutput();
         byteIo.readWrite();
     }
 }
