@@ -1,5 +1,10 @@
 package main.java.com.epam.codingbat;
-
+/**
+ * @author Nikolay Grunin
+ * @version 1.0
+ * Created 10.12.2017
+ * Committed 18.12.2017
+ */
 public class WarmUp1 {
     public boolean sleepIn(boolean weekday, boolean vacation) {
         if (!weekday || vacation) {

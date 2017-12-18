@@ -1,7 +1,12 @@
 package main.java.com.epam.codingbat;
 
 import java.util.Map;
-
+/**
+ * @author Nikolay Grunin
+ * @version 1.0
+ * Created 10.12.2017
+ * Committed 18.12.2017
+ */
 public class Map1 {
     public Map<String, String> mapBully(Map<String, String> map) {
         if (map.containsKey("a")) {

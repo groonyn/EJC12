@@ -1,5 +1,10 @@
 package main.java.com.epam.codingbat;
-
+/**
+ * @author Nikolay Grunin
+ * @version 1.0
+ * Created 10.12.2017
+ * Committed 18.12.2017
+ */
 public class Array1 {
     public boolean firstLast6(int[] nums) {
         if (nums[0] == 6 || nums[nums.length - 1] == 6) {
